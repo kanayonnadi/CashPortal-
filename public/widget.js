@@ -4,6 +4,7 @@
   const form = document.getElementById("chatForm");
   const input = document.getElementById("chatInput");
   const messages = document.getElementById("messages");
+  const minimize = document.getElementById("minimizeChat");
   const reset = document.getElementById("resetChat");
   const storageKey = "cashportal-chatbot-session-id";
 
@@ -27,6 +28,11 @@
     if (!panel.hidden) {
       input.focus();
     }
+  });
+
+  minimize.addEventListener("click", () => {
+    panel.hidden = true;
+    launcher.focus();
   });
 
   reset.addEventListener("click", async () => {
