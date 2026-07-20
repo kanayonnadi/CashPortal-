@@ -4,11 +4,15 @@
   "private": true,
   "description": "CashPortal demo banking website with a configurable web chatbot.",
   "main": "dist/index.js",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "start": "ts-node src/index.ts",
     "dev": "nodemon --exec ts-node src/index.ts",
     "demo": "CHATBOT_PLATFORM=web ts-node src/index.ts",
     "build": "tsc",
+    "postinstall": "npm run build",
     "start:prod": "node dist/index.js"
   },
   "dependencies": {
