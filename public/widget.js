@@ -36,7 +36,7 @@
       body: JSON.stringify({ sessionId })
     });
     messages.innerHTML = "";
-    addMessage("assistant", "Chat reset. Ask me a CashPortal support question or add FAQ files to the knowledge folder.");
+    addMessage("assistant", "Chat reset. How can I help with your CashPortal account today?");
     input.focus();
   });
 
