@@ -42,7 +42,7 @@
       body: JSON.stringify({ sessionId })
     });
     messages.innerHTML = "";
-    addMessage("assistant", "Chat reset. How can I help with your CashPortal account today?");
+    addMessage("assistant", "Chat reset. How can I help with your card account today?");
     input.focus();
   });
 

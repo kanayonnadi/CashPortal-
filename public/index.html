@@ -9,182 +9,228 @@
   <body>
     <header class="app-header">
       <a class="brand" href="/" aria-label="CashPortal home">
-        <span class="brand-mark">CP</span>
-        <span>CashPortal</span>
+        <span>CashPortal</span><b>!</b>
       </a>
       <nav aria-label="Primary">
-        <a href="#overview">Overview</a>
-        <a href="#transactions">Transactions</a>
-        <a href="#profile">Profile</a>
+        <a href="#account">My Account</a>
+        <a href="#activity">Transaction history</a>
+        <a href="#support">Support</a>
       </nav>
-      <div class="user-chip" aria-label="Logged in user">
-        <span>AM</span>
-        <strong>Avery Morgan</strong>
+      <div class="user-chip" aria-label="Logged in cardholder">
+        <span>BN</span>
+        <strong>Bellissimo Nick</strong>
       </div>
     </header>
 
-    <main class="dashboard">
-      <section id="overview" class="account-hero" aria-labelledby="welcome-heading">
-        <div class="welcome-copy">
-          <p class="eyebrow">Signed in securely</p>
-          <h1 id="welcome-heading">Good afternoon, Avery.</h1>
+    <main class="portal-shell">
+      <section class="hero-band" aria-labelledby="welcome-heading">
+        <div>
+          <p class="eyebrow">Cardholder portal</p>
+          <h1 id="welcome-heading">Manage My Account</h1>
           <p>
-            Here is your CashPortal snapshot for checking, card activity, and
-            account details.
+            View balances, monitor card activity, manage profile details, and
+            access prepaid card support actions.
           </p>
         </div>
-
-        <div class="phone-shell" aria-label="CashPortal mobile account preview">
-          <div class="phone-status">
-            <span>9:41</span>
-            <span>LTE</span>
-          </div>
-          <div class="app-card balance-card">
-            <div>
-              <span class="label">Available balance</span>
-              <strong>$18,427.60</strong>
-            </div>
-            <span class="status-pill">Verified</span>
-          </div>
-          <div class="quick-actions" aria-label="Common account actions">
-            <button type="button">Pay</button>
-            <button type="button">Move</button>
-            <button type="button">Save</button>
-          </div>
-          <div class="mini-list">
-            <div>
-              <span>Payroll deposit</span>
-              <strong>+$4,250.00</strong>
-            </div>
-            <div>
-              <span>City Electric</span>
-              <strong>-$118.42</strong>
-            </div>
-            <div>
-              <span>Harbor Market</span>
-              <strong>-$76.18</strong>
-            </div>
-          </div>
+        <div class="secure-note">
+          <strong>Card Status</strong>
+          <span>Normal</span>
         </div>
       </section>
 
-      <section class="summary-grid" aria-label="Account summary">
+      <section id="account" class="portal-frame" aria-label="CashPortal account overview">
+        <div class="portal-logo">CashPortal<b>!</b></div>
+
+        <div class="balance-strip" aria-label="Account balances">
+          <div>
+            <span>Secondary Balance</span>
+            <strong>2,140.00 EUR</strong>
+          </div>
+          <div>
+            <span>Card Balance</span>
+            <strong>865.35 EUR</strong>
+          </div>
+        </div>
+
+        <div class="account-layout">
+          <aside class="account-menu" aria-label="Account menu">
+            <strong>My Account</strong>
+            <a href="#profile">My Profile</a>
+            <a href="#activity">Transaction history</a>
+            <a href="#limits">Limits</a>
+            <a href="#fees">Fees</a>
+            <a href="#transfers">Transfer History</a>
+            <a href="#transfer-funds">Transfer Funds</a>
+            <a href="#lost-card">Lost or Stolen Card</a>
+          </aside>
+
+          <div class="card-preview" aria-label="Masked prepaid card details">
+            <div class="prepaid-card">
+              <span>GLOBAL</span>
+              <strong>CashPortal</strong>
+              <small>Prepaid Mastercard</small>
+            </div>
+
+            <dl class="card-details">
+              <div>
+                <dt>Cardholder</dt>
+                <dd>Bellissimo Nick</dd>
+              </div>
+              <div>
+                <dt>Card number</dt>
+                <dd>4349 **** **** 4896</dd>
+              </div>
+              <div>
+                <dt>CVV</dt>
+                <dd>*** <a href="#support">Show</a></dd>
+              </div>
+              <div>
+                <dt>Expiration date</dt>
+                <dd>11/2028</dd>
+              </div>
+              <div>
+                <dt>SAN number</dt>
+                <dd>427216355</dd>
+              </div>
+              <div>
+                <dt>Secondary balance</dt>
+                <dd>2,140.00 EUR</dd>
+              </div>
+              <div>
+                <dt>Card status</dt>
+                <dd>Normal</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <label class="ecommerce-toggle">
+          <input type="checkbox" />
+          <span>Click here to ENABLE online E-Commerce transactions</span>
+        </label>
+
+        <div class="request-panel">
+          <div>
+            <strong>Need a physical card?</strong>
+            <p>Request a plastic card and confirm postal delivery preferences.</p>
+          </div>
+          <button type="button">Request Physical Card</button>
+        </div>
+
+        <footer class="portal-footer" aria-label="Portal footer links">
+          <a href="#about">About Us</a>
+          <a href="#terms">Terms of use</a>
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#support">FAQ</a>
+          <a href="#contact">Contact Us</a>
+          <a href="#signout">Sign Out</a>
+          <a href="#language">English</a>
+        </footer>
+      </section>
+
+      <section id="support" class="support-grid" aria-label="CashPortal support topics">
         <article>
-          <span class="label">Checking</span>
-          <strong>$18,427.60</strong>
-          <p>CashPortal Everyday Checking ending in 4832</p>
+          <h2>Secondary Balance</h2>
+          <p>
+            Funds stay secure until transferred to Card Balance from Transfer Funds.
+          </p>
         </article>
         <article>
-          <span class="label">Savings goal</span>
-          <strong>$7,910.25</strong>
-          <p>68% toward the emergency fund target</p>
+          <h2>Card Balance</h2>
+          <p>
+            Available card funds can be used for ATM withdrawals or POS purchases.
+          </p>
+        </article>
+        <article id="lost-card">
+          <h2>Lost Card</h2>
+          <p>
+            Selecting Lost or Stolen Card suspends the card and alerts Customer Service.
+          </p>
         </article>
         <article>
-          <span class="label">Credit available</span>
-          <strong>$9,640.00</strong>
-          <p>Autopay scheduled for August 3, 2026</p>
+          <h2>CVV Code</h2>
+          <p>
+            Cardholders can use the CVV show link when they need to view the code.
+          </p>
         </article>
       </section>
 
       <section class="content-grid">
-        <article class="panel card-panel" aria-labelledby="card-heading">
-          <div class="section-heading">
-            <div>
-              <span class="label">Primary card</span>
-              <h2 id="card-heading">CashPortal Platinum</h2>
-            </div>
-            <span class="status-pill muted">Active</span>
-          </div>
-          <div class="bank-card" aria-label="Masked debit card information">
-            <span>CashPortal</span>
-            <strong>••••  ••••  ••••  9204</strong>
-            <div>
-              <span>Avery Morgan</span>
-              <span>07/29</span>
-            </div>
-          </div>
-          <dl class="details-list">
-            <div>
-              <dt>Cardholder</dt>
-              <dd>Avery Morgan</dd>
-            </div>
-            <div>
-              <dt>Billing city</dt>
-              <dd>Toronto, ON</dd>
-            </div>
-            <div>
-              <dt>Security</dt>
-              <dd>Two-factor authentication enabled</dd>
-            </div>
-          </dl>
-        </article>
-
-        <article id="transactions" class="panel" aria-labelledby="transactions-heading">
+        <article id="activity" class="panel" aria-labelledby="activity-heading">
           <div class="section-heading">
             <div>
               <span class="label">Recent activity</span>
-              <h2 id="transactions-heading">Transaction history</h2>
+              <h2 id="activity-heading">Transaction history</h2>
             </div>
-            <button class="text-button" type="button">Export</button>
           </div>
           <div class="transaction-list">
             <div class="transaction">
-              <span class="merchant-mark">DD</span>
+              <span class="merchant-mark">FR</span>
               <div>
-                <strong>Direct deposit</strong>
+                <strong>Funds received</strong>
                 <span>July 18, 2026</span>
               </div>
-              <strong class="credit">+$4,250.00</strong>
+              <strong class="credit">+750.00 EUR</strong>
             </div>
             <div class="transaction">
-              <span class="merchant-mark">CE</span>
+              <span class="merchant-mark">POS</span>
               <div>
-                <strong>City Electric</strong>
+                <strong>Point of sale purchase</strong>
                 <span>July 17, 2026</span>
               </div>
-              <strong>-$118.42</strong>
+              <strong>-42.80 EUR</strong>
             </div>
             <div class="transaction">
-              <span class="merchant-mark">HM</span>
+              <span class="merchant-mark">ATM</span>
               <div>
-                <strong>Harbor Market</strong>
+                <strong>ATM withdrawal</strong>
                 <span>July 16, 2026</span>
               </div>
-              <strong>-$76.18</strong>
+              <strong>-120.00 EUR</strong>
             </div>
-            <div class="transaction">
-              <span class="merchant-mark">RT</span>
-              <div>
-                <strong>Ride Transit</strong>
-                <span>July 15, 2026</span>
-              </div>
-              <strong>-$14.00</strong>
+          </div>
+        </article>
+
+        <article id="transfer-funds" class="panel" aria-labelledby="transfer-heading">
+          <div class="section-heading">
+            <div>
+              <span class="label">Move funds</span>
+              <h2 id="transfer-heading">Transfer Funds</h2>
             </div>
+          </div>
+          <p>
+            Transfer funds from Secondary Balance to Card Balance using
+            Secondary Balance -&gt; Card. Transfers must follow available card limits.
+          </p>
+          <div class="transfer-box">
+            <span>Secondary Balance</span>
+            <strong>2,140.00 EUR</strong>
+            <button type="button">Secondary Balance -&gt; Card</button>
           </div>
         </article>
       </section>
 
       <section id="profile" class="panel profile-panel" aria-labelledby="profile-heading">
         <div>
-          <span class="label">Cardholder profile</span>
-          <h2 id="profile-heading">Avery Morgan</h2>
+          <span class="label">My Profile</span>
+          <h2 id="profile-heading">Bellissimo Nick</h2>
           <p>
-            Personal demo profile for a signed-in CashPortal customer. All
-            balances, transactions, and card details on this page are fictional.
+            Cardholders can edit personal details such as home address and phone
+            number. Country cannot be changed due to AML rules and regulations.
           </p>
         </div>
         <dl class="details-list compact">
           <div>
             <dt>Email</dt>
-            <dd>avery.morgan@example.com</dd>
+            <dd>bellissimo.nick@example.com</dd>
           </div>
           <div>
-            <dt>Member since</dt>
-            <dd>March 2021</dd>
+            <dt>Account type</dt>
+            <dd>Virtual prepaid card</dd>
           </div>
           <div>
-            <dt>Last sign-in</dt>
-            <dd>July 20, 2026 at 2:14 PM</dd>
+            <dt>Upgrade status</dt>
+            <dd>Stage 1 - proof of address and ID required for Stage 2</dd>
           </div>
         </dl>
       </section>
@@ -212,7 +258,7 @@
         </header>
         <div class="messages" id="messages" aria-live="polite">
           <div class="message assistant">
-            Welcome to CashPortal support. How can I help with your account today?
+            Welcome to CashPortal support. How can I help with your card account today?
           </div>
         </div>
         <form class="chat-form" id="chatForm">
@@ -221,7 +267,7 @@
             name="message"
             type="text"
             autocomplete="off"
-            placeholder="Ask about your account..."
+            placeholder="Ask about your card..."
             aria-label="Message"
           />
           <button type="submit">Send</button>
