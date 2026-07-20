@@ -202,8 +202,12 @@
             <small>Account help</small>
           </div>
           <div class="chat-actions" aria-label="Chat controls">
-            <button id="minimizeChat" type="button" aria-label="Minimize chat">Minimize</button>
-            <button id="resetChat" type="button">Reset</button>
+            <button id="minimizeChat" type="button" aria-label="Minimize chat" title="Minimize chat">
+              <span aria-hidden="true">-</span>
+            </button>
+            <button id="resetChat" type="button" aria-label="Reset chat" title="Reset chat">
+              <span aria-hidden="true">&#8635;</span>
+            </button>
           </div>
         </header>
         <div class="messages" id="messages" aria-live="polite">

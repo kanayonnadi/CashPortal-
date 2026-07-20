@@ -472,6 +472,10 @@ dd {
   box-shadow: var(--shadow);
 }
 
+.chat-panel[hidden] {
+  display: none;
+}
+
 .chat-header {
   display: flex;
   align-items: center;
@@ -507,10 +511,15 @@ dd {
 }
 
 .chat-header button {
-  min-height: 34px;
-  padding: 0 12px;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  padding: 0;
   background: rgba(255, 255, 255, 0.14);
   color: #fff;
+  font-size: 1.08rem;
+  line-height: 1;
 }
 
 .messages {
