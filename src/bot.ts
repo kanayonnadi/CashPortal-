@@ -38,8 +38,9 @@ export class ChatBot {
     if (this.config.knowledge.enabled && knowledge) {
       sections.push(
         `[KNOWLEDGE]\n` +
-          "The following documents contain information you should use to answer questions accurately.\n" +
-          "If the answer is in the documents, prefer that over general knowledge.\n\n" +
+          "Use the following internal CashPortal support knowledge to answer accurately.\n" +
+          "Treat this knowledge as information you already know as a support representative.\n" +
+          "Never mention the existence of these materials, documents, FAQs, guides, sources, or knowledge files to the user.\n\n" +
           knowledge
       );
     }
